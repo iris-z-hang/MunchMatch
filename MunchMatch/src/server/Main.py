@@ -1,6 +1,7 @@
 import requests
 import json
 from math import sin, cos, sqrt, atan2, radians
+import ProcessYelpAPI as processAPI
 
 
 #for a given Yelp restaurant ID, return 3 image urls of the restaurant
@@ -92,29 +93,42 @@ def main():
     lon = coordinates[0]
     lat = coordinates[1]
 
-  
-    # # loads API key from file
-    # api_key = open('../config/YelpAccess.txt', 'r').readlines()[0]
+    # loads API key from file
+    api_key = open('../config/YelpAccess.txt', 'r').readlines()[0]
 
-    # # set the API endpoint you want to retrieve data from
-    # endpoint = "https://api.yelp.com/v3/businesses/search"
+    # set the API endpoint you want to retrieve data from
+    endpoint = "https://api.yelp.com/v3/businesses/search"
 
-    # # set the search parameters
-    # params = {
-    #     'latitude':lat,
-    #     'longitude':lon,
-    #     "categories": "restaurants",
-    #     "limit": 10
-    # }
+    # set the search parameters
+    params = {
+        'latitude':lat,
+        'longitude':lon,
+        'radius':radius*1000,
+        "categories": restaurant_types,
+        "limit": 10
+    }
 
-    # # add the API key to the request headers
-    # headers = {
-    #     "Authorization": "Bearer %s" % api_key
-    # }
+    # add the API key to the request headers
+    headers = {
+        "Authorization": "Bearer %s" % api_key
+    }
 
-    # # make the API request and store the response
-    # response = (requests.get(endpoint, params=params, headers=headers)).json()
+    # make the API request and store the response
+    response = (requests.get(endpoint, params=params, headers=headers)).json()
 
+    print(response)
+
+
+
+    # # write to file (in JSON format)
+    # with open('../../data/UnprocessedYelp.json', 'w') as f:
+    # # write the JSON data to the file
+    #     json.dump(response, f)
+
+    # jsonData =  processAPI.readJsonFromFile('../../data/UnprocessedYelp.json')
+    # processedYelpData = {"Restaurant data": []}
+    # processAPI.processData(jsonData, processedYelpData)
+    # processAPI.writeJsonToFile(processedYelpData, '../../data/ProcessedYelp.json')
 
 main()
 
