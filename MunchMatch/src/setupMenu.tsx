@@ -1,6 +1,8 @@
 import ListGroup from "./setupMenuComponents/ListGroup";
+import MultiSelectListGroup from "./setupMenuComponents/MultiSelectListGroup";
 import Button from "./setupMenuComponents/Button";
 import "./setupMenu.css";
+
 
 function SetupMenu() {
   let neighborhoods = ["Point Grey", "Kitsilano", "Main St"];
@@ -29,11 +31,11 @@ function SetupMenu() {
       </div>
 
       <div className="list-group">
-        <ListGroup
+        <MultiSelectListGroup
           items={cuisines}
           heading="Cuisine"
           onSelectItem={handleSelectItem}
-        ></ListGroup>
+        ></MultiSelectListGroup>
       </div>
 
       <div className="button">
