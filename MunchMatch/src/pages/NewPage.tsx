@@ -16,12 +16,16 @@ function NewPage() {
   }
   return (
     <>
-     <h1>Hello World</h1>
+     <h1>Munch Match</h1>
      <div>
       {page=== 1  && <SetupMenu/>}
       {page=== 2  && <MainMenu/>}
       </div>
-     <div>page count: {page} 
+<div className="image">
+
+      <img src="MunchMatchLogo2" className="logo" alt="" />
+</div>
+     <div>
      <br/>
      <Button colorScheme='blue' onClick={handleClickMinus}>Last Page</Button>
      <Button colorScheme='blue' onClick={handleClick}>Next Page</Button>

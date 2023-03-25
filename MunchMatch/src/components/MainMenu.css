@@ -6,7 +6,7 @@
     font-size: 50px;
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-style: italic;
-    color: red;
+    color: rgb(76, 18, 222);
     text-align: center;
     text-decoration:underline;
 }
@@ -17,4 +17,23 @@
 
 .button {
     padding: 1.5rem;
+    width: 50px;
+    /* margin: 0 auto;
+    display: inline-block; */
 }
+
+.logo {
+    height: 400px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.like-button, .dislike-button {
+    padding: 1.5rem;
+    width: 50px;
+    margin: 20px;
+    display: inline-block;
+}
+
+

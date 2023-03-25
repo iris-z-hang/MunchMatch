@@ -47,7 +47,7 @@ function MainMenu() {
   //   implement button onCLick properly
   return (
     <div className="main">
-      <div className="heading">Munch Match</div>
+      {/* <div className="heading">Munch Match</div> */}
 
       <div className="image">
       <img src={foodImages[food]} className="logo" alt="" />

@@ -62,7 +62,7 @@ function SetupMenu() {
 
   return (
     <div className="main">
-      <div className="heading">Munch Match</div>
+      {/* <div className="heading">Munch Match</div> */}
 
       <div className="list-group">
         <ListGroup
@@ -88,14 +88,19 @@ function SetupMenu() {
         ></MultiSelectListGroup>
       </div>
 
-      <div className="button">
+      <div>
+      ☺
+      </div>
+
+
+      {/* <div className="button">
         <Button
           color="primary"
           onClick={clickContinue}
         >
           Continue
         </Button>
-      </div>
+      </div> */}
     </div>
   );
 }
