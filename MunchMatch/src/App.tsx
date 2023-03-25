@@ -1,9 +1,10 @@
+import React from "react";
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+//import reactLogo from './assets/react.svg'
 import SetupMenu from './setupMenu'
 import MainMenu from './mainMenu'
 import './App.css'
-import image from './tobs.jpg'
+//import image from './tobs.jpg'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -12,11 +13,8 @@ function App() {
 
     <div className="App">
       {/* <img src={image} className="logo" alt="" /> */}
-      <MainMenu />
+      <SetupMenu />
     </div>
- 
-
-
   ) ;
 }
 
