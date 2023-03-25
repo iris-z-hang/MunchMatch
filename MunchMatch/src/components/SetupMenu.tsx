@@ -48,7 +48,7 @@ function SetupMenu() {
       const jsonString = JSON.stringify(output);
 
       axios
-        .post("http://localhost:<port>/<endpoint>", { jsonString })
+        .post("http://127.0.0.1:5000/<get_user_data>", { jsonString })
         .then((response: AxiosResponse<any, any>) => {
           //run mainMenu tsx object? entered response type as string
           //can JSON.stringify(response)

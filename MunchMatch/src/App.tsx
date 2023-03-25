@@ -7,8 +7,8 @@ import { ChakraProvider } from '@chakra-ui/react'
 import React from "react";
 import { useState } from 'react'
 //import reactLogo from './assets/react.svg'
-import SetupMenu from './setupMenu'
-import MainMenu from './mainMenu'
+//import SetupMenu from './SetupMenu'
+//import MainMenu from './mainMenu'
 import './App.css'
 //import image from './tobs.jpg'
 
