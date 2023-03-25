@@ -22,8 +22,6 @@ function MultiSelectListGroup({
       {items.length === 0 && <p>No item found</p>}
       <ul className="list-group">
         {items.map((item, index) => {
-          console.log(item, index);
-          console.log(set.has(index));
           return (
             <li
               className={
@@ -38,7 +36,6 @@ function MultiSelectListGroup({
                 } else {
                   newSet.delete(index);
                 }
-                console.log(newSet);
                 const backToArray = Array.from(newSet.values());
                 setSelectedIndicies(backToArray);
                 onSelectItem(item);
