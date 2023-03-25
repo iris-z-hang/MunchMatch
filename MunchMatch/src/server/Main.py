@@ -58,12 +58,22 @@ def get_neighborhood_coordinates(name):
         if row['name'] == name:
             return [row['geo_point_2d']['lon'],row['geo_point_2d']['lat']  ]
 
+reqTest = {
+    "User Results": [
+    {
+      "neighborhood": "Downtown",
+      "radius": 1,
+      "restaurant types": ["chinese"]
+    }]
+    }
 
 
-def main():
-    
+def main(req):
+
+    print(req)
+
     #get user requirements to use as parameters in API call
-    user_data_dict = get_user_results_dict()
+    user_data_dict = req
 
     neighborhood = user_data_dict['neighborhood']
     radius = user_data_dict['radius']
@@ -96,8 +106,6 @@ def main():
     # make the API request and store the response
     response = (requests.get(endpoint, params=params, headers=headers)).json()
 
-
-
     # write to file (in JSON format)
     with open('../../data/UnprocessedYelp.json', 'w') as f:
     # write the JSON data to the file
@@ -108,5 +116,6 @@ def main():
     processAPI.processData(jsonData, processedYelpData)
     processAPI.writeJsonToFile(processedYelpData, '../../data/ProcessedYelp.json')
 
-main()
+    return processedYelpData
 
+print("hello world")
