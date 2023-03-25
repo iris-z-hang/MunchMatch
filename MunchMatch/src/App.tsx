@@ -1,16 +1,23 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import SetupMenu from './setupMenu'
+import MainMenu from './mainMenu'
 import './App.css'
+import image from './tobs.jpg'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
+
     <div className="App">
-      <SetupMenu />
+      {/* <img src={image} className="logo" alt="" /> */}
+      <MainMenu />
     </div>
-  )
+ 
+
+
+  ) ;
 }
 
 export default App
