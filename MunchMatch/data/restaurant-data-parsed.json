@@ -8,6 +8,7 @@
       "address": "3431 W Broadway, Vancouver, BC V6R 2B4",
       "rating": 4.5,
       "review_count": 500,
+      "id": "the-eatery-vancouver",
       "image_urls": [
         "https://s3-media0.fl.yelpcdn.com/bphoto/KwTLN1U4cPmRuM5-AimVuQ/o.jpg",
         "https://s3-media0.fl.yelpcdn.com/bphoto/yIjN0cLKWyhZCC5CoO6nYQ/o.jpg",
@@ -18,12 +19,13 @@
 
     {
       "name": "Anh and Chi",
-      "categories": ["Vietnamese, Coctail Bars"],
+      "categories": ["Vietnamese", "Cocktail Bars"],
       "city": "Vancouver",
       "country": "Canada",
       "address": "3388 Main Street, Vancouver, BC V5V 3M7",
       "rating": 4.0,
       "review_count": 594,
+      "id": "anh-and-chi-vancouver",
       "image_urls": [
         "https://s3-media0.fl.yelpcdn.com/bphoto/pMvur_cjBwQ3nz1ye5PJeQ/o.jpg",
         "https://s3-media0.fl.yelpcdn.com/bphoto/3p3q1DXky-CELjkUYH60UQ/o.jpg",
@@ -33,12 +35,13 @@
     },
     {
       "name": "Anh and Chi",
-      "categories": ["Vietnamese, Coctail Bars"],
+      "categories": ["Vietnamese", "Cocktail Bars"],
       "city": "Vancouver",
       "country": "Canada",
       "address": "3388 Main Street, Vancouver, BC V5V 3M7",
       "rating": 4.0,
       "review_count": 594,
+      "id": "anh-and-chi-vancouver",
       "image_urls": [
         "https://s3-media0.fl.yelpcdn.com/bphoto/pMvur_cjBwQ3nz1ye5PJeQ/o.jpg",
         "https://s3-media0.fl.yelpcdn.com/bphoto/3p3q1DXky-CELjkUYH60UQ/o.jpg",
@@ -48,12 +51,13 @@
     },
     {
       "name": "Anh and Chi",
-      "categories": ["Vietnamese, Coctail Bars"],
+      "categories": ["Vietnamese", "Cocktail Bars"],
       "city": "Vancouver",
       "country": "Canada",
       "address": "3388 Main Street, Vancouver, BC V5V 3M7",
       "rating": 4.0,
       "review_count": 594,
+      "id": "anh-and-chi-vancouver",
       "image_urls": [
         "https://s3-media0.fl.yelpcdn.com/bphoto/pMvur_cjBwQ3nz1ye5PJeQ/o.jpg",
         "https://s3-media0.fl.yelpcdn.com/bphoto/3p3q1DXky-CELjkUYH60UQ/o.jpg",
@@ -63,12 +67,13 @@
     },
     {
       "name": "Anh and Chi",
-      "categories": ["Vietnamese, Coctail Bars"],
+      "categories": ["Vietnamese", "Cocktail Bars"],
       "city": "Vancouver",
       "country": "Canada",
       "address": "3388 Main Street, Vancouver, BC V5V 3M7",
       "rating": 4.0,
       "review_count": 594,
+      "id": "anh-and-chi-vancouver",
       "image_urls": [
         "https://s3-media0.fl.yelpcdn.com/bphoto/pMvur_cjBwQ3nz1ye5PJeQ/o.jpg",
         "https://s3-media0.fl.yelpcdn.com/bphoto/3p3q1DXky-CELjkUYH60UQ/o.jpg",
@@ -78,12 +83,13 @@
     },
     {
       "name": "Anh and Chi",
-      "categories": ["Vietnamese, Coctail Bars"],
+      "categories": ["Vietnamese", "Cocktail Bars"],
       "city": "Vancouver",
       "country": "Canada",
       "address": "3388 Main Street, Vancouver, BC V5V 3M7",
       "rating": 4.0,
       "review_count": 594,
+      "id": "anh-and-chi-vancouver",
       "image_urls": [
         "https://s3-media0.fl.yelpcdn.com/bphoto/pMvur_cjBwQ3nz1ye5PJeQ/o.jpg",
         "https://s3-media0.fl.yelpcdn.com/bphoto/3p3q1DXky-CELjkUYH60UQ/o.jpg",
@@ -93,12 +99,13 @@
     },
     {
       "name": "Anh and Chi",
-      "categories": ["Vietnamese, Coctail Bars"],
+      "categories": ["Vietnamese", "Cocktail Bars"],
       "city": "Vancouver",
       "country": "Canada",
       "address": "3388 Main Street, Vancouver, BC V5V 3M7",
       "rating": 4.0,
       "review_count": 594,
+      "id": "anh-and-chi-vancouver",
       "image_urls": [
         "https://s3-media0.fl.yelpcdn.com/bphoto/pMvur_cjBwQ3nz1ye5PJeQ/o.jpg",
         "https://s3-media0.fl.yelpcdn.com/bphoto/3p3q1DXky-CELjkUYH60UQ/o.jpg",
@@ -108,12 +115,13 @@
     },
     {
       "name": "Anh and Chi",
-      "categories": ["Vietnamese, Coctail Bars"],
+      "categories": ["Vietnamese", "Cocktail Bars"],
       "city": "Vancouver",
       "country": "Canada",
       "address": "3388 Main Street, Vancouver, BC V5V 3M7",
       "rating": 4.0,
       "review_count": 594,
+      "id": "anh-and-chi-vancouver",
       "image_urls": [
         "https://s3-media0.fl.yelpcdn.com/bphoto/pMvur_cjBwQ3nz1ye5PJeQ/o.jpg",
         "https://s3-media0.fl.yelpcdn.com/bphoto/3p3q1DXky-CELjkUYH60UQ/o.jpg",
@@ -123,12 +131,13 @@
     },
     {
       "name": "Anh and Chi",
-      "categories": ["Vietnamese, Coctail Bars"],
+      "categories": ["Vietnamese", "Cocktail Bars"],
       "city": "Vancouver",
       "country": "Canada",
       "address": "3388 Main Street, Vancouver, BC V5V 3M7",
       "rating": 4.0,
       "review_count": 594,
+      "id": "anh-and-chi-vancouver",
       "image_urls": [
         "https://s3-media0.fl.yelpcdn.com/bphoto/pMvur_cjBwQ3nz1ye5PJeQ/o.jpg",
         "https://s3-media0.fl.yelpcdn.com/bphoto/3p3q1DXky-CELjkUYH60UQ/o.jpg",
@@ -138,12 +147,13 @@
     },
     {
       "name": "Anh and Chi",
-      "categories": ["Vietnamese, Coctail Bars"],
+      "categories": ["Vietnamese", "Cocktail Bars"],
       "city": "Vancouver",
       "country": "Canada",
       "address": "3388 Main Street, Vancouver, BC V5V 3M7",
       "rating": 4.0,
       "review_count": 594,
+      "id": "anh-and-chi-vancouver",
       "image_urls": [
         "https://s3-media0.fl.yelpcdn.com/bphoto/pMvur_cjBwQ3nz1ye5PJeQ/o.jpg",
         "https://s3-media0.fl.yelpcdn.com/bphoto/3p3q1DXky-CELjkUYH60UQ/o.jpg",

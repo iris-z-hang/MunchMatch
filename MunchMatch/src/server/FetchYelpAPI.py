@@ -1,4 +1,5 @@
 import requests
+import json
 
 # loads API key from file
 api_key = open('../config/YelpAccess.txt', 'r').readlines()[0]
@@ -8,7 +9,7 @@ endpoint = "https://api.yelp.com/v3/businesses/search"
 
 # set the search parameters
 params = {
-    "location": "New York City",
+    "location": "Vancouver, BC",
     "categories": "restaurants",
     "limit": 10
 }
@@ -19,7 +20,9 @@ headers = {
 }
 
 # make the API request and store the response
-response = requests.get(endpoint, params=params, headers=headers)
+response = (requests.get(endpoint, params=params, headers=headers)).json()
 
-# print the response content (in JSON format)
-print(response.json())
+# write to file (in JSON format)
+with open('../../data/UnprocessedYelp.json', 'w') as f:
+    # write the JSON data to the file
+    json.dump(response, f)

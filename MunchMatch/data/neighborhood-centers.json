@@ -1,0 +1,90 @@
+[
+  {
+    "name": "Arbutus-Ridge",
+    "geo_point_2d": { "lon": -123.161669238, "lat": 49.2468049108 }
+  },
+  {
+    "name": "Downtown",
+    "geo_point_2d": { "lon": -123.116567008, "lat": 49.2807470711 }
+  },
+  {
+    "name": "Fairview",
+    "geo_point_2d": { "lon": -123.131048865, "lat": 49.2645404871 }
+  },
+  {
+    "name": "Grandview-Woodland",
+    "geo_point_2d": { "lon": -123.066728221, "lat": 49.2764396102 }
+  },
+  {
+    "name": "Hastings-Sunrise",
+    "geo_point_2d": { "lon": -123.040269923, "lat": 49.277934053 }
+  },
+  {
+    "name": "Marpole",
+    "geo_point_2d": { "lon": -123.12838166, "lat": 49.2102074666 }
+  },
+  {
+    "name": "Riley Park",
+    "geo_point_2d": { "lon": -123.103146806, "lat": 49.2447664796 }
+  },
+  {
+    "name": "Shaughnessy",
+    "geo_point_2d": { "lon": -123.139760167, "lat": 49.2456809771 }
+  },
+  {
+    "name": "Strathcona",
+    "geo_point_2d": { "lon": -123.088235281, "lat": 49.2782195786 }
+  },
+  {
+    "name": "West End",
+    "geo_point_2d": { "lon": -123.135437653, "lat": 49.2850111894 }
+  },
+  {
+    "name": "Dunbar-Southlands",
+    "geo_point_2d": { "lon": -123.189546803, "lat": 49.2379619063 }
+  },
+  {
+    "name": "Kerrisdale",
+    "geo_point_2d": { "lon": -123.159576182, "lat": 49.2236554855 }
+  },
+  {
+    "name": "Killarney",
+    "geo_point_2d": { "lon": -123.037647029, "lat": 49.2170216717 }
+  },
+  {
+    "name": "Kitsilano",
+    "geo_point_2d": { "lon": -123.16329474, "lat": 49.2675398494 }
+  },
+  {
+    "name": "South Cambie",
+    "geo_point_2d": { "lon": -123.121800916, "lat": 49.2455564633 }
+  },
+  {
+    "name": "Victoria-Fraserview",
+    "geo_point_2d": { "lon": -123.064134718, "lat": 49.220011941 }
+  },
+  {
+    "name": "Kensington-Cedar Cottage",
+    "geo_point_2d": { "lon": -123.072884592, "lat": 49.2466864472 }
+  },
+  {
+    "name": "Mount Pleasant",
+    "geo_point_2d": { "lon": -123.09851312, "lat": 49.2630652507 }
+  },
+  {
+    "name": "Oakridge",
+    "geo_point_2d": { "lon": -123.123024604, "lat": 49.2264031973 }
+  },
+  {
+    "name": "Renfrew-Collingwood",
+    "geo_point_2d": { "lon": -123.040166465, "lat": 49.2473427346 }
+  },
+  {
+    "name": "Sunset",
+    "geo_point_2d": { "lon": -123.092038001, "lat": 49.2187561515 }
+  },
+  {
+    "name": "West Point Grey",
+    "geo_point_2d": { "lon": -123.203467483, "lat": 49.2684012111 }
+  }
+]
