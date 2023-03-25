@@ -13,9 +13,14 @@ def writeJsonToFile(data, FILENAME):
 
 def processData (sourceData, targetData):
   # missing array based, categories, image_url
+  
   for i in sourceData['businesses']:
+      categoryArray = []
+      for j in i['categories']:
+          categoryArray.append(j['title'])
       targetData["Restaurant data"].append({
           "name": i['name'],
+          "category": categoryArray,
           "street-address": i['location']['address1'],
           "city": i['location']['city'],
           "province": i['location']['state'],
@@ -24,6 +29,7 @@ def processData (sourceData, targetData):
           "review_count": i['review_count'],
           "yelp_url": i['url']
       })
+
 
 if __name__ == '__main__':
     jsonData = readJsonFromFile('../../data/UnprocessedYelp.json')
