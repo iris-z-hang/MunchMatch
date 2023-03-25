@@ -4,24 +4,6 @@ from math import sin, cos, sqrt, atan2, radians
 import ProcessYelpAPI as processAPI
 
 
-#for a given Yelp restaurant ID, return 3 image urls of the restaurant
-def get_image_urls(id):
-    # loads API key from file
-    api_key = open('../config/YelpAccess.txt', 'r').readlines()[0]
-
-    # set the API endpoint you want to retrieve data from (based on given restaurant id)
-    endpoint = "https://api.yelp.com/v3/businesses/" + id
-
-    # add the API key to the request headers
-    headers = {
-    "Authorization": "Bearer %s" % api_key
-    }
-
-    # make the API request and store the response
-    response = (requests.get(endpoint, headers=headers)).json()
-
-    return response['photos']
-
 def write_neighborhood_json():
     # Load the JSON file
     with open('../../data/local-area-boundary.json') as f:
