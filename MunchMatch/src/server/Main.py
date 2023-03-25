@@ -65,15 +65,13 @@ reqTest = {
       "radius": 1,
       "restaurant types": ["chinese"]
     }]
-    }
+}
 
 
 def main(req):
 
-    print(req)
-
     #get user requirements to use as parameters in API call
-    user_data_dict = req
+    user_data_dict = req["User Results"][0]
 
     neighborhood = user_data_dict['neighborhood']
     radius = user_data_dict['radius']
@@ -114,8 +112,11 @@ def main(req):
     jsonData =  processAPI.readJsonFromFile('../../data/UnprocessedYelp.json')
     processedYelpData = {"Restaurant data": []}
     processAPI.processData(jsonData, processedYelpData)
-    processAPI.writeJsonToFile(processedYelpData, '../../data/ProcessedYelp.json')
+    #processAPI.writeJsonToFile(processedYelpData, '../../data/ProcessedYelp.json')
+
+    print(processedYelpData)
+
 
     return processedYelpData
 
-print("hello world")
+main(reqTest)
