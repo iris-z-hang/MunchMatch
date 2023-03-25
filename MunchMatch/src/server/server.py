@@ -1,7 +1,9 @@
 from flask import Flask, request, jsonify
 import Main as main
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
 @app.route('/get_user_data', methods =['POST'])
 def get_user_data():
@@ -15,4 +17,5 @@ def test():
     return "testtest"
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host="0,0,0,0")
+    
