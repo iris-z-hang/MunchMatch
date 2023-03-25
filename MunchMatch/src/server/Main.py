@@ -21,27 +21,6 @@ def write_neighborhood_json():
     # Print the result
     print(result)
 
-def calculate_distance_km(lat1,lon1,lat2,lon2):
-    
-
-    # Approximate radius of earth in km
-    R = 6373.0
-
-    lat1 = radians(lat1)
-    lon1 = radians(lon1)
-    lat2 = radians(lat2)
-    lon2 = radians(lon2)
-
-    dlon = lon2 - lon1
-    dlat = lat2 - lat1
-
-    a = sin(dlat / 2)**2 + cos(lat1) * cos(lat2) * sin(dlon / 2)**2
-    c = 2 * atan2(sqrt(a), sqrt(1 - a))
-
-    distance = R * c
-
-    print("Result: ", distance)
-
 
 #returns the user input results, including selected neighborhood name, radius, list of preferred cuisine types
 def get_user_results_dict():
@@ -114,9 +93,4 @@ def main(req):
     processAPI.processData(jsonData, processedYelpData)
     #processAPI.writeJsonToFile(processedYelpData, '../../data/ProcessedYelp.json')
 
-    print(processedYelpData)
-
-
     return processedYelpData
-
-main(reqTest)
