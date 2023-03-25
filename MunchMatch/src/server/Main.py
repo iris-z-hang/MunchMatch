@@ -102,15 +102,15 @@ def main():
 
 
 
-    # # write to file (in JSON format)
-    # with open('../../data/UnprocessedYelp.json', 'w') as f:
-    # # write the JSON data to the file
-    #     json.dump(response, f)
+    # write to file (in JSON format)
+    with open('../../data/UnprocessedYelp.json', 'w') as f:
+    # write the JSON data to the file
+        json.dump(response, f)
 
-    # jsonData =  processAPI.readJsonFromFile('../../data/UnprocessedYelp.json')
-    # processedYelpData = {"Restaurant data": []}
-    # processAPI.processData(jsonData, processedYelpData)
-    # processAPI.writeJsonToFile(processedYelpData, '../../data/ProcessedYelp.json')
+    jsonData =  processAPI.readJsonFromFile('../../data/UnprocessedYelp.json')
+    processedYelpData = {"Restaurant data": []}
+    processAPI.processData(jsonData, processedYelpData)
+    processAPI.writeJsonToFile(processedYelpData, '../../data/ProcessedYelp.json')
 
 main()
 
