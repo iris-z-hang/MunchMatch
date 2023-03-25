@@ -1,6 +1,6 @@
-import ListGroup from "./setupMenuComponents/ListGroup";
-import MultiSelectListGroup from "./setupMenuComponents/MultiSelectListGroup";
-import Button from "./setupMenuComponents/Button";
+import ListGroup from "./ListGroup";
+import MultiSelectListGroup from ".//MultiSelectListGroup";
+import Button from "./Button"
 import "./setupMenu.css";
 
 

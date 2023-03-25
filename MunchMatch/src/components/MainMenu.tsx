@@ -1,12 +1,23 @@
-import Button from "./mainMenuComponents/Button";
-import "./mainMenu.css";
-import image1 from './tobs.jpg'
-import image2 from './image2.png'
-import image3 from './image3.png'
+import Button from "./Button";
+import "./MainMenu.css";
+import image1 from '../tobs.jpg'
+import image2 from '../image2.png'
+import image3 from '../image3.png'
 import { useState } from 'react';
 
+// 1interface FullName {
+//   2    firstName: string;
+//   3    lastName: string;
+//   4}
+//   5function FunctionalComponent(props:FullName){
+//   6    // props.firstName
+//   7    // props.lastName
+//   8}
 
-function mainMenu() {
+
+function MainMenu() {
+
+  // props.page
 
   const foodImages : string[] = []
   foodImages.push(image1);
@@ -15,8 +26,21 @@ function mainMenu() {
 
   const [food, setFood] = useState(0);
 
+  const foodHandlerLike = () => {
+    // call to save api
+    if (food < 11 && food >= 0)
+      setFood(food+1);
 
-  const css = "./mainMenu.css";
+  }
+
+  const foodHandlerDislike = () => {
+      setFood(food+1);
+    
+    
+  }
+
+
+  const css = "./MainMenu.css";
 
   //need to fix styling to space out
   //   add more filters
@@ -32,14 +56,15 @@ function mainMenu() {
 
       </div>
 
+      Food: {food}
       <div className="like-button">
-        <Button color="primary" onClick={function myFood(){setFood(food+1);}}>
+        <Button color="primary" onClick={foodHandlerLike} >
           Like
         </Button>
       </div>
 
       <div className="dislike-button">
-        <Button color="primary" onClick={function myFood(){setFood(food-1);}}>
+        <Button color="primary" onClick={foodHandlerDislike}>
           Dislike
         </Button>
       </div>
@@ -49,4 +74,4 @@ function mainMenu() {
   );
 }
 
-export default mainMenu;
+export default MainMenu;
