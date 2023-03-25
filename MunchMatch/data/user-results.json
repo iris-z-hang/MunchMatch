@@ -1,9 +1,9 @@
 {
   "User Results": [
     {
-      "neighborhood": "Kitsilano",
-      "radius": 4,
-      "restaurant types": ["italian", "japanese"]
+      "neighborhood": "Renfrew-Collingwood",
+      "radius": 2,
+      "restaurant types": ["italian", "mexican"]
     }
   ]
 }

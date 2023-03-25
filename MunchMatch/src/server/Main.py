@@ -59,8 +59,6 @@ def get_neighborhood_coordinates(name):
             return [row['geo_point_2d']['lon'],row['geo_point_2d']['lat']  ]
 
 
-#http serve to accept input
-#flask  
 
 def main():
     
@@ -97,8 +95,6 @@ def main():
 
     # make the API request and store the response
     response = (requests.get(endpoint, params=params, headers=headers)).json()
-
-    print(response)
 
 
 
