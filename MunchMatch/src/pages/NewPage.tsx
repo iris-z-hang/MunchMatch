@@ -16,7 +16,7 @@ function NewPage() {
   };
   return (
     <>
-      <h1>Hello World</h1>
+      <h1>Your restaurant is Miku! </h1>
       <div>
         {page === 1 && <SetupMenu />}
         {page === 2 && <MainMenu />}
