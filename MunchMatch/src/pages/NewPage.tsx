@@ -22,7 +22,6 @@ function NewPage() {
         {page === 2 && <MainMenu />}
       </div>
       <div>
-        page count: {page}
         <br />
         <Button colorScheme="blue" onClick={handleClickMinus}>
           Last Page
