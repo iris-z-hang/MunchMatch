@@ -1,0 +1,9 @@
+{
+  "User Results": [
+    {
+      "neighborhood": "Kitsilano",
+      "radius": 4,
+      "restaurant types": ["Italian", "Japanese", "Fast Food"]
+    }
+  ]
+}
