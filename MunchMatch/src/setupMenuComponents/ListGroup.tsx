@@ -1,5 +1,4 @@
 import { useState } from "react";
-//import "./Dropdown.css";
 
 interface ListGroupProps {
   items: string[];
