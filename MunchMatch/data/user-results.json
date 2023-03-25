@@ -1,9 +1,9 @@
 {
   "User Results": [
     {
-      "neighborhood": "Renfrew-Collingwood",
-      "radius": 2,
-      "restaurant types": ["italian", "mexican"]
+      "neighborhood": "Downtown",
+      "radius": 1,
+      "restaurant types": ["japanese"]
     }
   ]
 }
