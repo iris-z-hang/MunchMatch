@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import ListGroup from "../components/ListGroup";
 import MultiSelectListGroup from "../components/MultiSelectListGroup";
 import Button from "../components/Button";
@@ -37,27 +37,27 @@ function SetupMenu() {
   };
 
   function clickContinue() {
-    console.log("continuing...")
-    if (
-      output["User Results"].neighborhood == "" ||
-      output["User Results"].radius == 0 ||
-      output["User Results"].cuisines.size == 0
-    ) {
-      console.log("Not enough options selected!");
-    } else {
-      const jsonString = JSON.stringify(output);
+    console.log("continuing...");
+    // if (
+    //   output["User Results"].neighborhood == "" ||
+    //   output["User Results"].radius == 0 ||
+    //   output["User Results"].cuisines.size == 0
+    // ) {
+    //   console.log("Not enough options selected!");
+    // } else {
+    //   const jsonString = JSON.stringify(output);
 
-      axios
-        .post("http://127.0.0.1:5000/<get_user_data>", { jsonString })
-        .then((response: AxiosResponse<any, any>) => {
-          //run mainMenu tsx object? entered response type as string
-          //can JSON.stringify(response)
-          console.log(response);
-        })
-        .catch((error: any) => {
-          console.log("Error: " + error);
-        });
-    }
+    //   axios
+    //     .post("http://127.0.0.1:5000/<get_user_data>", { jsonString })
+    //     .then((response: AxiosResponse<any, any>) => {
+    //       //run mainMenu tsx object? entered response type as string
+    //       //can JSON.stringify(response)
+    //       console.log(response);
+    //     })
+    //     .catch((error: any) => {
+    //       console.log("Error: " + error);
+    //     });
+    // }
   }
 
   return (
@@ -89,10 +89,7 @@ function SetupMenu() {
       </div>
 
       <div className="button">
-        <Button
-          color="primary"
-          onClick={clickContinue}
-        >
+        <Button color="primary" onClick={clickContinue}>
           Continue
         </Button>
       </div>

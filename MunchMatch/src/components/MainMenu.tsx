@@ -1,9 +1,10 @@
 import Button from "./Button";
 import "./MainMenu.css";
-import image1 from '../tobs.jpg'
-import image2 from '../image2.png'
-import image3 from '../image3.png'
-import { useState } from 'react';
+import image1 from "../tobs.jpg";
+import image2 from "../image2.png";
+import image3 from "../image3.png";
+import { useState } from "react";
+import myData from "../../data/ProcessedYelp.json";
 
 // 1interface FullName {
 //   2    firstName: string;
@@ -14,31 +15,30 @@ import { useState } from 'react';
 //   7    // props.lastName
 //   8}
 
-
 function MainMenu() {
+  const [data, setData] = useState(myData.Restaurant_data);
 
   // props.page
 
-  const foodImages : string[] = []
-  foodImages.push(image1);
-  foodImages.push(image2);
-  foodImages.push(image3);
+  const foodImages: string[] = [];
+
+  data.map((entry) => {
+    foodImages.push(entry.image_url[0]);
+  });
+
+  // foodImages.push(data[0].image_url[1]);
+  // foodImages.push(data[0].image_url[2]);
 
   const [food, setFood] = useState(0);
 
   const foodHandlerLike = () => {
     // call to save api
-    if (food < 11 && food >= 0)
-      setFood(food+1);
-
-  }
+    if (food < 11 && food >= 0) setFood(food + 1);
+  };
 
   const foodHandlerDislike = () => {
-      setFood(food+1);
-    
-    
-  }
-
+    setFood(food + 1);
+  };
 
   const css = "./MainMenu.css";
 
@@ -48,28 +48,22 @@ function MainMenu() {
   return (
     <div className="main">
       <div className="heading">Munch Match</div>
-
       <div className="image">
-      <img src={foodImages[food]} className="logo" alt="" />
-      {/* <img src={foodImages[1]} className="logo" alt="" />
+        <img src={foodImages[food]} className="logo" alt="" />
+        {/* <img src={foodImages[1]} className="logo" alt="" />
       <img src={foodImages[2]} className="logo" alt="" /> */}
-
       </div>
-
       Food: {food}
       <div className="like-button">
-        <Button color="primary" onClick={foodHandlerLike} >
+        <Button color="primary" onClick={foodHandlerLike}>
           Like
         </Button>
       </div>
-
       <div className="dislike-button">
         <Button color="primary" onClick={foodHandlerDislike}>
           Dislike
         </Button>
       </div>
-
-
     </div>
   );
 }
