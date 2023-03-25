@@ -21,7 +21,7 @@ def get_image_urls(id):
 
     return response['photos']
 
-def get_neighborhood_coordinate():
+def get_neighborhood_coordinats():
     # Load the JSON file
     with open('../../data/local-area-boundary.json') as f:
        data = json.load(f)
@@ -59,13 +59,9 @@ def calculate_distance_km(lat1,lon1,lat2,lon2):
 
     print("Result: ", distance)
 
+def get_user_results_dict():
+    with open('../../data/user-results.json') as f:
+       data = json.load(f)
 
-
-
-
-
-
-
-     
-
+    return data['User Results'][0]
 
